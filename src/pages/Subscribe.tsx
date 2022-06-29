@@ -5,6 +5,8 @@ import { useCreateSubscriberMutation } from "../graphql/generated";
 
 import { Logo } from "../components/Logo";
 
+import codeMockup from "../assets/code-mockup.png";
+
 export function Subscribe() {
     const navigate = useNavigate();
 
@@ -70,7 +72,7 @@ export function Subscribe() {
                 </div>
             </div>
 
-            <img src="/src/assets/code-mockup.png" alt="" className="mt-10" />
+            <img src={codeMockup} alt="Background image code mockup" className="mt-10" />
         </section>
     )
 }
